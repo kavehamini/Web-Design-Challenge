@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+            img{ width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: 100%;}
+    </style>
+        
+    <meta charset="UTF-8">
+    <Title>Latitude - Latitude Analysis Dashboard with Attitude</Title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+
+                <!-- First Row -->
+                <div class="row">
+            
+                  <!-- First (and only column) -->
+                           <div class="col-md-6">
+                    
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                    <a class="navbar-brand" href="index.html">Latitude</a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+                            </div>
+                            <div class="col-md-2">     
+                                    
+                                        <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            plot
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="Temperature.html">Max Temperature</a>
+                                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                            <a class="dropdown-item" href="wind-speed.html">Wind-speed</a>
+                                        </div>
+                                        </div>
+                                </div>                                                                                                       
+                            <div class="col-md-2">
+                                  
+                                    <a class="navbar-brand" href="Comparison.html" target='_blank'>Comparison</a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                  
+                            </div>
+                            <div class="col-md-2">
+                                  
+                                    <a class="navbar-brand" href="index.html">Data</a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                 
+                            </div>                                                                  
+                            </nav>
+                  </div>
+                </div>
+        </div>
+            
+        
+<head>
+   <div class="row">
+        <div class="col-md-9">
+        <h1>Summary: Latitude vs. X</h1>
+       </div>
+       <hr>
+       <div class="col-md-3">
+            <h1>visualizations</h1>
+         </div>
+       
+    </div>
+</head>
+<hr>
+<body>
+    <div class="row">
+    <div class="col-md-3">
+    <img src='Resources/assets/images/Fig1.png', alt='City Latitude vs Max Temp image' style="width:300px;height:300px;float:left">
+    </div>
+    <div class="col-md-5">
+    <p>
+            The purpose of this project was to analyze how weather changes as you get closer to the equater. To accomplish this analysis. we first pulled data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities.
+    </p>
+    <p>
+            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis,as well as explanations and descriptions of any trends and correlations witnessed. 
+    </p>
+   </div>
+   <div class="col-md-2">
+   <img src='Resources/assets/images/Fig1.png', alt='Fig1'>
+   
+   <img src='Resources/assets/images/Fig2.png', alt='Fig2'>
+    </div>
+    <div class="col-md-2">
+    <img src='Resources/assets/images/Fig3.png', alt='Fig3'>
+    <img src='Resources/assets/images/Fig4.png', alt='Fig4'>
+    </div>
+</body>      
+   
+  
+  
+  
+  
+  
+  
+  
+  
+
+</body>
+
+
+</html>
+    
+
