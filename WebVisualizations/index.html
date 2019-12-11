@@ -21,7 +21,7 @@
             
                   <!-- First (and only column) -->
                            <div class="col-md-6">
-                    
+
                             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                                     <a class="navbar-brand" href="index.html">Latitude</a>
                                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,16 +30,15 @@
                             </div>
                             <div class="col-md-2">     
                                     
+                                        
                                         <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            plot
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="Temperature.html">Max Temperature</a>
-                                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
-                                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                                            <a class="dropdown-item" href="wind-speed.html">Wind-speed</a>
-                                        </div>
+                                                        <button class="dropbtn">Plot</button>
+                                                        <div class="dropdown-content">
+                                                          <a href="Temp.html">Latitude vs. Max Temperature</a>
+                                                          <a href="Humidity.html">Latitude vs. Humidity</a>
+                                                          <a href="Cloud.html">Latitude vs. Cloudiness</a>
+                                                          <a href="Wind.html">Latitude vs. Wind Speed</a>
+                                                        </div>
                                         </div>
                                 </div>                                                                                                       
                             <div class="col-md-2">
@@ -51,7 +50,7 @@
                             </div>
                             <div class="col-md-2">
                                   
-                                    <a class="navbar-brand" href="index.html">Data</a>
+                                    <a class="navbar-brand" href="Data.html">Data</a>
                                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                       <span class="navbar-toggler-icon"></span>
                                  
@@ -62,41 +61,77 @@
         </div>
             
         
-<head>
-   <div class="row">
-        <div class="col-md-9">
-        <h1>Summary: Latitude vs. X</h1>
-       </div>
-       <hr>
-       <div class="col-md-3">
-            <h1>visualizations</h1>
-         </div>
-       
-    </div>
-</head>
-<hr>
-<body>
-    <div class="row">
-    <div class="col-md-3">
-    <img src='Resources/assets/images/Fig1.png', alt='City Latitude vs Max Temp image' style="width:300px;height:300px;float:left">
-    </div>
-    <div class="col-md-5">
-    <p>
-            The purpose of this project was to analyze how weather changes as you get closer to the equater. To accomplish this analysis. we first pulled data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities.
-    </p>
-    <p>
-            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis,as well as explanations and descriptions of any trends and correlations witnessed. 
-    </p>
-   </div>
-   <div class="col-md-2">
-   <img src='Resources/assets/images/Fig1.png', alt='Fig1'>
-   
-   <img src='Resources/assets/images/Fig2.png', alt='Fig2'>
-    </div>
-    <div class="col-md-2">
-    <img src='Resources/assets/images/Fig3.png', alt='Fig3'>
-    <img src='Resources/assets/images/Fig4.png', alt='Fig4'>
-    </div>
+        <div class="content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-8">
+                                    <div class="box">
+                                        <div class="page-header">
+                                            <h1 class="title">Summary: Latitude vs. X</h1>
+                                        
+                                            <img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="280" width="280">
+                                            <p class="category">The objective of this project was to analyze the weather data from over 500 cities selected randomly to investigate the correlation between the latitude and the weather conditions. 
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-4">
+          
+                                                <main class="container2">
+                                                    <header>
+                                                        <h2>Visualizations</h2>
+                                                    </header>
+                                                <!--Normally these medium columns go full wide on small screen sizes-->
+                                                <div class="row">
+                                                  <div class="col-xs-3 col-sm-3 col-md-6">
+                                                      <figure id="main1_figure">
+                                                          <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                                                        <a href="Temp.html">
+                                                          <img src="Resources/assets/images/Fig1.png" alt="latitude_Max-Temperature" style="width:150px;height:150px;">
+                                                        </a>
+                                                        </figure>
+                                            
+                                                  </div>
+                                                  <div class="col-xs-3 col-sm-3 col-md-6">
+                                                      <figure id="main1_figure">
+                                                          <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                                                          <a href="CHumidity.html">
+                                                          <img   src="Resources/assets/images/Fig2.png" alt="latitude_Cloudiness" style="width:150px;height:150px;">
+                                                          </a>
+                                                        </figure>
+                                                  </div>
+                                                <!-- </div> -->
+                                
+                                                <!-- <div class="row"> -->
+                                                    <div class="col-xs-3 col-sm-3 col-md-6">
+                                                        <figure id="main1_figure">
+                                                            <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                                                            <a href="Cloud.html">
+                                                            <img   src="Resources/assets/images/Fig3.png" alt="latitude_humidity" style="width:150px;height:150px;">
+                                                            </a>  
+                                                        </figure>
+                                                    </div>
+                                                    <div class="col-xs-3 col-sm-3 col-md-6">
+                                                        <figure id="main1_figure">
+                                                            <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                                                            <a href="Wind.html">
+                                                            <img  src="Resources/assets/images/Fig4.png" alt="latitude_wind-speed" style="width:150px;height:150px;">
+                                                            </a>  
+                                                        </figure>
+                                                    </div>
+                                                  </div>
+                                                  </main>
+                                           
+                                            
+                                      </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
 </body>      
    
   
@@ -104,11 +139,7 @@
   
   
   
-  
-  
-  
 
-</body>
 
 
 </html>

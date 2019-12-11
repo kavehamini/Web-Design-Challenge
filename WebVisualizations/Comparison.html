@@ -20,17 +20,15 @@
                         </div>
                         <div class="col-md-2">     
                                 
-                                    <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        plot
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="Temp.html">Max Temperature</a>
-                                        <a class="dropdown-item" href="Humidity.html">Humidity</a>
-                                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                                        <a class="dropdown-item" href="wind-speed.html">Wind-speed</a>
-                                    </div>
-                                    </div>
+                                        <div class="dropdown">
+                                                        <button class="dropbtn">Plot</button>
+                                                        <div class="dropdown-content">
+                                                          <a href="Temp.html">Latitude vs. Max Temperature</a>
+                                                          <a href="Humidity.html">Latitude vs. Humidity</a>
+                                                          <a href="Cloud.html">Latitude vs. Cloudiness</a>
+                                                          <a href="Wind.html">Latitude vs. Wind Speed</a>
+                                                        </div>
+                                        </div>
                             </div>                                                                                                       
                         <div class="col-md-2">
                               
@@ -41,7 +39,7 @@
                         </div>
                         <div class="col-md-2">
                               
-                                <a class="navbar-brand" href="index.html">Data</a>
+                                <a class="navbar-brand" href="Data.html">Data</a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                   <span class="navbar-toggler-icon"></span>
                              
@@ -50,69 +48,42 @@
               </div>
             </div>
     </div>
-    <head>
-    <div class="row">
-        <div class="col-md-12">
-        <h1>Comparison: Lattitude vs X</h1>
-        </div>                          
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-        <h2>Click any plot to get in_depth analysis.</h2> 
-    </div>
-    </div>
-    <div class="row">
-            <div class="col-md-6">
-             <h3>vs Maximum Temperature</h3>
-            </div>
-             <div class="col-md-6">
-             <h3>vs Humidity</h3>
-            </div>
-    </div>
-    <div class="row">
-            <div class="col-md-6">
-                    
-                <a href="Temp.html" target="_blank">
-                <img border="0" alt="vs Maximum Temperature" src="Resources/assets/images/Fig1.png" width="400" height="400">
-                </a>
-            </div>
-            <div class="col-md-6">
-                    
-                    <a href="Humidity.html" target="_blank">
-                    <img border="0" alt="vs Humidity" src="Resources/assets/images/Fig2.png" width="400" height="400">
-                    </a>
-            </div>
-            
-                    
-             
-            </div>
-    </div>
-    <div class="row">
-            <div class="col-md-6">
-             <h3>vs Cloudliness</h3>
-            </div>
-             <div class="col-md-6">
-             <h3>vs Wind Speed</h3>
-            </div>
-    </div>
-    <div class="row">
-            <div class="col-md-6">
-                    
-                <a href="https://www.w3schools.com" target="_blank">
-                <img border="0" alt="vs Cloudliness" src="Resources/assets/images/Fig3.png" width="400" height="400">
-                </a>
-            </div>
-            <div class="col-md-6">
-                    
-                    <a href="https://www.w3schools.com" target="_blank">
-                    <img border="0" alt="vs Wind Speed" src="Resources/assets/images/Fig4.png" width="400" height="400">
-                    </a>
-            </div>
-            
-                    
-             
-            </div>
-    </div>
+    <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                            <div class="col-md-12">
+                                    <div class="box">
+                                        <div class="header">
+                                                <h1 class="title">Comparison: Latitude vs. X</h1>
+                                                <div class="row">
+                                                          <p class="category">Click any plot to get in_depth analysis.</p>
+                                                </div>  
+                                                </div>        
+                                        <div class="content">
+                                            <div class="row">
+                                                    <div class="col-xs-12 col-sm-12 col-md-6">
+                                                                    <h2>vs. Max Temperature</h2>
+                                                                          <a href="Temp.html"><img class="img-fluid" src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="500" width="500"></a>
+                                                                       </div>
+                                                                       <div class="col-xs-12 col-sm-12 col-md-6">
+                                                                          <h2>vs. Humidity</h2>
+                                                                          <a href="Humidity.html"><img class="img-fluid" src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" height="500" width="500"></a>
+                                                                       </div>
+                                                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                                                           <h2>vs. Cloudiness</h2>
+                                                                           <a href="Cloud.html"><img class="img-fluid" src="Resources/assets/images/Fig3.png" alt="Latitude   vs. Cloudiness" height="500" width="500"></a>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                                                           <h2>vs. Wind Speed</h2>
+                                                                                     <a href="Wind.html"><img class="img-fluid" src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" height="500" width="500"></a>
+                                                                            </div>	 
+                                                              </div>
+                                                      </div>
+                                              </div>
+                                            </div>
+                                    </div>
+                            </div>
+                    </div>
 
         
 
